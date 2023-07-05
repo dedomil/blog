@@ -1,0 +1,21 @@
+import blog, { redirects } from "https://deno.land/x/blog@0.5.0/blog.tsx";
+
+blog({
+  title: "Aditya Yadav",
+  author: "Aditya Yadav",
+  avatar: "https://avatars.githubusercontent.com/u/84765888",
+  favicon: "https://avatars.githubusercontent.com/u/84765888",
+  avatarClass: "rounded-full",
+  theme: "auto",
+  lang: "en",
+  readtime: true,
+  links: [
+    { title: "Email", url: "mailto:adityayadav@tutanota.com", target: "_blank" },
+    { title: "GitHub", url: "https://github.com/dedomil", target: "_blank" },
+    { title: "Twitter", url: "https://twitter.com/aadixl", target: "_blank" },
+  ],
+  background: "#1d1f21",
+  middlewares: [
+    redirects({}),
+  ],
+});
