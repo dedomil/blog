@@ -1,4 +1,5 @@
 import blog, { redirects } from "https://deno.land/x/blog@0.5.0/blog.tsx";
+import { UNOCSS_OPTS } from "./unocss.js";
 
 blog({
   title: "Aditya Yadav",
@@ -8,6 +9,7 @@ blog({
   avatarClass: "rounded-full",
   theme: "auto",
   lang: "en",
+  unocss: UNOCSS_OPTS,
   readtime: true,
   links: [
     { title: "Email", url: "mailto:adityayadav@tutanota.com", target: "_blank" },
