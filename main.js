@@ -1,4 +1,4 @@
-import blog, { redirects } from "https://deno.land/x/blog@0.5.0/blog.tsx";
+import blog, { redirects } from "https://deno.land/x/blog@0.7.0/blog.tsx";
 import { UNOCSS_OPTS } from "./unocss.js";
 
 blog({
@@ -8,6 +8,7 @@ blog({
   favicon: "favicon.ico",
   avatarClass: "rounded-full",
   theme: "auto",
+  canonicalUrl: "https://aadi.lol",
   lang: "en",
   unocss: UNOCSS_OPTS,
   readtime: true,
