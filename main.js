@@ -1,4 +1,4 @@
-import blog, { redirects } from "https://deno.land/x/blog@0.7.0/blog.tsx";
+import blog from "https://deno.land/x/blog@0.7.0/blog.tsx";
 import { UNOCSS_OPTS } from "./unocss.js";
 
 blog({
@@ -7,7 +7,6 @@ blog({
   avatar: "https://avatars.githubusercontent.com/u/84765888",
   favicon: "favicon.ico",
   avatarClass: "rounded-full",
-  theme: "auto",
   canonicalUrl: "https://aadi.lol",
   lang: "en",
   unocss: UNOCSS_OPTS,
@@ -19,7 +18,4 @@ blog({
     { title: "Twitter", url: "https://twitter.com/aadixl", target: "_blank" },
   ],
   background: "#1d1f21",
-  middlewares: [
-    redirects({}),
-  ],
 });
