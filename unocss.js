@@ -5,6 +5,6 @@ export const UNOCSS_OPTS = {
     presetUno()
   ],
   preflights: [{
-    getCSS: ({ theme }) => `.font-bold {font-weight: 800 !important;} p {font-weight: 500 !important;}`
+    getCSS: ({ theme }) => `::-webkit-scrollbar {display: none;}`
   }]
 }

@@ -9,6 +9,7 @@ blog({
   avatarClass: "rounded-full",
   canonicalUrl: "https://aadi.lol",
   lang: "en",
+  theme: "light",
   unocss: UNOCSS_OPTS,
   readtime: true,
   dateFormat: (date) => new Intl.DateTimeFormat("en-IN", { dateStyle: "full" }).format(date),
